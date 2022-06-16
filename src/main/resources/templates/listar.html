@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+        <div class="container py-4">
+            <div class="card bg-light">
+                <div class="card-header h5 text-secondary" th:text="#{text.cliente.listar.titulo}"></div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a th:href="@{/form}" th:text="#{text.cliente.crear}" class="btn btn-success btn-xs">Crear cliente</a>
+                    </h4>
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr class="text-dark ">
+                                <th class="text-center">Id</th>
+                                <th th:text="#{text.cliente.nombre}" class="text-center">Nombre</th>
+                                <th th:text="#{text.cliente.apellido}" class="text-center">Apellido</th>
+                                <th th:text="#{text.cliente.email}" class="text-center">Correo</th>
+                                <th th:text="#{text.cliente.usuario}" class="text-center">Usuario</th>
+                                <th th:text="#{text.cliente.editar}" class="text-center" sec:authorize="hasRole('ADMIN')">Editar</th>
+                                <th th:text="#{text.cliente.eliminar}" class="text-center" sec:authorize="hasRole('ADMIN')">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="cliente: ${clientes}">
+                                <td class="text-center" th:text="${cliente.id}"></td>
+                                <td class="text-center" th:text="${cliente.nombre}"></td>
+                                <td class="text-center" th:text="${cliente.apellido}"></td>
+                                <td class="text-center" th:text="${cliente.email}"></td>
+                                <td class="text-center" th:text="${cliente.username}"></td>
+                                <td class="text-center"><a class="btn btn-primary btn-xs" th:href="@{/form/} + ${cliente.id}" th:text="#{text.cliente.editar}" ></a></td>
+				<td class="text-center"><a class="btn btn-danger btn-xs" th:href="@{/eliminar/} + ${cliente.id}" th:text="#{text.cliente.eliminar}" onclick="return confirm('¿Estás seguro que quieres eliminar este cliente?');"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav th:replace="paginator-nav :: paginator"></nav>
+                </div>
+            </div>
+        </div>
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

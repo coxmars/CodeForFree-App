@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <section class="p-5 bg-light">
+            <div class="conteiner">
+                <h3 class="fw-bolder text-center text-black">¿Qué te gustaría aprender?</h3><br><br>
+                <div class="mx-auto row g-5">
+                    <div class="col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <a th:href="@{https://docs.oracle.com/javase/8/docs/api/}" target="_blank" rel="noopener noreferrer"><img th:src="@{/css/images/l2.png}" width="125" height="125" class="rounded-circle mb-3" alt=""></a>
+                                <h3 class="card-title h4 mb-3">Java</h3>
+                                <p class="card-text text-muted">5.4M estudiantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <a th:href="@{https://docs.python.org/3/library/}" target="_blank" rel="noopener noreferrer"><img th:src="@{/css/images/l1.png}" width="125" height="125" class="rounded-circle mb-3" alt=""></a>
+                                <h3 class="card-title h4 mb-3">Python</h3>
+                                <p class="card-text text-muted">7.6M estudiantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <a th:href="@{https://devdocs.io/cpp/}" target="_blank" rel="noopener noreferrer"><img th:src="@{/css/images/l5.png}" width="125" height="125" class="rounded-circle mb-3" alt=""></a>
+                                <h3 class="card-title h4 mb-3">C++</h3>
+                                <p class="card-text text-muted">4.9M estudiantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-5 bg-light">
+            <div class="conteiner">
+                <div class="mx-auto row g-5">
+                    <div class="col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <a th:href="@{https://developer.mozilla.org/es/docs/Web/HTML}" target="_blank" rel="noopener noreferrer"><img th:src="@{/css/images/l3.png}" width="125" height="125" class="rounded-circle mb-3" alt=""></a>
+                                <h3 class="card-title h4 mb-3">HTML</h3>
+                                <p class="card-text text-muted">8.4M estudiantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <a th:href="@{https://developer.mozilla.org/es/docs/Web/CSS}" target="_blank" rel="noopener noreferrer"><img th:src="@{/css/images/l4.png}" width="125" height="125" class="rounded-circle mb-3" alt=""></a>
+                                <h3 class="card-title h4 mb-3">CSS</h3>
+                                <p class="card-text text-muted">2.4M estudiantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <a th:href="@{https://docs.microsoft.com/en-us/dotnet/csharp/}" target="_blank" rel="noopener noreferrer"><img th:src="@{/css/images/l6.png}" width="125" height="125" class="rounded-circle mb-3" alt=""></a>
+                                <h3 class="card-title h4 mb-3">C#</h3>
+                                <p class="card-text text-muted">3.7M estudiantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

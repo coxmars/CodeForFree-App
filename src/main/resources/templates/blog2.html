@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <!-- Sección del blog -->
+        <section class="py-5">
+            <div class="container px-2">
+                <div class="row gx-5">
+                    <div class="col-lg-3">
+                        <div class="d-flex align-items-center mt-lg-5 mb-4">
+                            <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                            <div class="ms-3">
+                                <div class="fw-bold">Caleb Loría</div>
+                                <div class="text-muted">News</div>
+                            </div>
+                        </div>
+                        <aside>
+                            <section class="py-5">
+                                <div>
+                                    <div class="row gx-5">
+                                        <div class="col-xl-10">
+                                            <h2 class="fw-bolder fs-5 mb-4">Destacado</h2>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">May 12, 2021</div>
+                                                <a style="text-align: justify;" class="text-decoration-none text-dark" th:href="@{/blog1}"><h6>¿Que es la blockchain?</h6></a>
+                                            </div>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">May 5, 2021</div>
+                                                <a class="text-decoration-none text-dark" th:href="@{/blog3}"><h6>¿Como ser hacker ético?</h6></a>
+                                            </div>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">Apr 21, 2021</div>
+                                                <a class="text-decoration-none text-dark" th:href="@{/blog4}"><h6>Caracteristicas de Java</h6></a>
+                                            </div>
+                                            <div class="mb-5">
+                                                <a class="text-decoration-none" th:href="@{/blog}">
+                                                    Más noticias
+                                                    <i class="bi bi-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>
+                    </div>
+                    <div class="col-lg-7">
+                        <!-- Post content-->
+                        <article>
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h2 class="fw-bolder mb-1">¿Que es la web3?</h2>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Marzo 23, 2022</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Algoritmos</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Software</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" th:src="@{/css/images/web3.svg}" width="700" height="500" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p style="text-align: justify;" class="fs-5 mb-4">La Web 3.0 es la tercera generación de servicios de Internet para páginas web y aplicaciones. Se centrará en el uso de una comprensión de datos basada en máquinas para proporcionar una Web semántica y datificada. El objetivo final de la Web 3.0 es crear sitios web más inteligentes, conectados y abiertos.</p>
+                                <h2 class="fw-bolder mb-4 mt-5">Beneficios de la Web 3.0</h2>
+                                <ul>
+                                    <li><p style="text-align: justify;" class="fs-5 mb-4"><strong>Fiabilidad:</strong> Esta red dará a los creadores y usuarios más libertad en general. Garantizará que estos últimos siempre tengan control sobre sus datos online mediante la utilización de redes descentralizadas.</p></li>
+                                </ul>
+                                <ul>
+                                    <li><p style="text-align: justify;" class="fs-5 mb-4"><strong>Es para todos:</strong> No necesita ser controlada por una sola entidad. Es posible que las empresas más grandes ya no tengan un control total sobre Internet. Como resultado, las aplicaciones descentralizadas o apps no se pueden censurar ni restringir de ninguna forma.</p></li>
+                                </ul>
+                            </section>
+                        </article> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <main>
+            <section>
+                <div class="conteiner"><br><br>
+                    <h2>Preguntas frecuentes</h2>
+                    <p class="text-muted">A continuación se presentan una serie de preguntas frecuentes con sus respuestas, si sus dudas no lograron solventarse puede realizar otras preguntas a través del formulario de contacto o vía correo electrónico. </p>
+                </div>
+            </section>
+            <section><br><br>
+                <div class="contenedor-preguntas">
+                    <div class="acordion">
+                        <div class="acordion-item" id="question01">
+                            <a class="acordion-link" href="#question01">
+                                ¿Qué lenguaje de programación debo aprender primero?
+                                <i class="icon ion-md-add"></i>
+                                <i class="icon ion-md-remove"></i>
+                            </a>
+                            <div class="respuesta">
+                                <p>Eso depende de lo que estés tratando de lograr.<br>Para el desarrollo web: comience con HTML y luego pase a CSS, JavaScript y demás.<br>Para programación de aplicaciones generales: Python, C++; luego Java, C# o Swift, según la plataforma a la que se dirija.</p>
+                            </div>
+                        </div>
+                        <div class="acordion-item" id="question02">
+                            <a class="acordion-link" href="#question02">
+                                ¿Cuál es el horario de atención de servicio al cliente?
+                                <i class="icon ion-md-add"></i>
+                                <i class="icon ion-md-remove"></i>
+                            </a>
+                            <div class="respuesta">
+                                <p>De Lunes a Sábado de 10:00 a.m. a 6:00 p.m. Domingo de 11:00 a.m. a 2:00 p.m. y de 3:00 p.m. a 7:00 p.m.</p>
+                            </div>
+                        </div>
+                        <div class="acordion-item" id="question03">
+                            <a class="acordion-link" href="#question03">
+                                ¿La plataforma CodeForFree es gratis?
+                                <i class="icon ion-md-add"></i>
+                                <i class="icon ion-md-remove"></i>
+                            </a>
+                            <div class="respuesta">
+                                <p>Aprender en CodeForFree es completamente gratis, nuestra aplicación está disponible en la Web, en el futuro estará en IOS y Android.</p>
+                            </div>
+                        </div>
+                        <div class="acordion-item" id="question04">
+                            <a class="acordion-link" href="#question04">
+                                ¿Puedo aprender a través de diferentes dispositivos?
+                                <i class="icon ion-md-add"></i>
+                                <i class="icon ion-md-remove"></i>
+                            </a>
+                            <div class="respuesta">
+                                <p>¡Absolutamente! La aplicación sincroniza tu progreso siempre que uses la misma cuenta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-preguntas">
+                    <div class="card border-0">
+                        <div class="card-body p-4 py-lg-5">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <div class="h5 fw-bolder">Tiene más preguntas?</div>
+                                    <p class="text-muted mb-4">
+                                        Contáctenos a
+                                        <br />
+                                        <a href="https://www.google.com/intl/es/gmail/about/" target="_blank" rel="noopener noreferrer">soporte@codeforfree.com</a>
+                                    </p>
+                                    <div class="h5 fw-bolder">Siganos en</div>
+                                    <a class="fs-4 px-2 link-dark" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="bi-twitter"></i></a>
+                                    <a class="fs-4 px-2 link-dark" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="bi-facebook"></i></a>
+                                    <a class="fs-4 px-2 link-dark" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="bi-linkedin"></i></a>
+                                    <a class="fs-4 px-2 link-dark" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

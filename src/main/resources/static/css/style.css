@@ -1,0 +1,165 @@
+/* Estilos principales */
+
+.fondo {
+    background-color: #212529;
+}
+
+.group--color {
+    background: white;
+    color: #024070;
+    padding: 100px;
+    text-align: center;
+    margin-bottom: 35px; 
+    padding-bottom: 1em;
+}
+
+.conteiner {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.conteiner h2 {
+    margin: auto;
+    font-size: 30px;
+    line-height: 60px; 
+    font-weight: bold;
+    padding: auto;
+}
+
+.conteiner p {
+    font-size: 18px;
+    line-height: 30px; /*Este atributo nos sirve como interlineado en parrafos*/
+}
+
+.features {
+    margin: auto;
+    padding: var(--margenes) 0;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    color: #212529;
+    margin-bottom: 35px;
+}
+
+.enviar:hover{
+    cursor: pointer;
+}
+
+.our-features {
+    padding-bottom: 30px;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features {
+    width: 100%;
+    text-align: center;
+}
+
+.features img{
+    width: 20%;
+}
+
+.features h3{
+    margin: 20px 0;
+}
+.features p {
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+/* Estilos del footer */
+footer{
+    background: #212529;
+    padding: 40px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 2.5px solid white;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h6{
+    color: white;
+    padding-bottom: 15px;
+    margin: 0 10px;
+}
+
+.content-foo a{
+    color: white;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.content-foo a:hover{
+    color: #0d6efd;
+    line-height: 30px;
+    text-decoration: underline #0d6efd;
+}
+
+.content-send{
+    text-align: justify;
+}
+
+.content-send h6{
+    color: white;
+    padding-bottom: 15px;
+    margin: 0 10px;
+}
+
+.content-send a{
+    color: white;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.content-send a:hover{
+    color: #0d6efd;
+    line-height: 30px;
+    text-decoration: underline #0d6efd;
+}
+
+#submitForm{
+    font-size: 15px;
+    margin: 0 10px;
+    width:auto;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+#email {
+    margin-top: 5px;
+    margin: 0 10px;
+    font-size: 15px;
+    line-height: 30px;
+    width: 90%;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 15px;
+    margin: 30px 0 0 0;
+    color: white;
+}
+

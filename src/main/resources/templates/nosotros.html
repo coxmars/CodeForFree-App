@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <section><br><br>
+            <div class="conteiner">
+                <h2>Nuestra misión es hacer que la creación de sitios web sea fácil</h2><br>
+                <p style="text-align: justify;" class="text-muted">Inicia como un pequeño pasatiempo en San José en donde se dan a conocer los servicios personalizados, lo que permitió, poco a poco, brindar una oferta de producto basada en lo que busca el cliente. Hace algunos años se expandieron operaciones con la apertura de oficinas y plataformas de aprendizaje en línea.<br><br>
+                    Es a partir de este paso que impulsa un crecimiento continuo año tras año. Esto le permite a CodeForFree colocarse como una de las plataformas en línea más robustas y eficientes, con el objetivo de atraer mayores estudiantes o profesionales para que puedan actualizarse/capacitarse con las tecnologías más demandadas por el mercado laboral.<br><br>
+                    Nuestros valores e ideales siempre se han alineado en el aprendizaje gratuito y sin fronteras, donde estudiantes y profesionales puedan expandir sus conocimientos y habilidades de forma eficaz a través de los recursos de la plataforma. Esto se elabora con la perspectiva de ofrecer mejores oportunidades en la sociedad costarricense.</p>
+            </div>
+        </section>
+
+        <section class="py-3" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" th:src="@{/css/images/fundacion.jpg}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bolder">Nuestra fundación</h3>
+                        <p style="text-align: justify;" class="lead fw-normal text-muted mb-0">La Fundación CodeForFree es una organización sin fines de lucro que representa al equipo central de desarrollo, asegura los repositorios de códigos y supervisa las relaciones públicas de la plataforma de aprendizaje. Su objetivo es acelerar la adopción global de la tecnología/desarrollo software que ofrece la plataforma CodeForFree.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="py-3">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" th:src="@{/css/images/crecer.jpg}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bolder">Crecimiento y más allá</h3>
+                        <p style="text-align: justify;" class="lead fw-normal text-muted mb-0">Cualquier persona a través de la plataforma Code ForFree puede incrementar sus habilidades de desarrollo para crecer como profesional y encontrar mejores oportunidades en sus vidas mediante nuestros recursos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="py-3">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h3 class="fw-bolder">Nuestro equipo</h3>
+                    <p class="lead fw-normal text-muted mb-5">Dedicados a la calidad y a su éxito</p>
+                </div>
+                <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5 mb-5 mb-xl-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" th:src="@{/css/images/cara1.jpg}" alt="..." />
+                            <h5 class="fw-bolder">Marco Araya</h5>
+                            <div class="fst-italic text-muted">Fundador &amp; CEO</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-xl-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" th:src="@{/css/images/cara3.jpg}" alt="..." />
+                            <h5 class="fw-bolder">Caleb Loria</h5>
+                            <div class="fst-italic text-muted">CFO</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-sm-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" th:src="@{/css/images/cara2.jpg}" alt="..." />
+                            <h5 class="fw-bolder">Luis Antonio</h5>
+                            <div class="fst-italic text-muted">Gerente de Operaciones</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" th:src="@{/css/images/cara4.jpg}" alt="..." />
+                            <h5 class="fw-bolder">Josue Rivera</h5>
+                            <div class="fst-italic text-muted">CTO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-3" id="instructors">
+            <div class="container">
+                <h3 class="fw-bolder text-center text-black">Instructores</h3>
+                <p class="lead text-center text-muted fw-normal mb-5">
+                    Todos nuestros instructores tienen más de 5 años trabajando como desarrolladores web en la industria
+                </p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <img
+                                th:src="@{/css/images/cara5.jpg}"
+                                class="rounded-circle mb-3"
+                                alt=""
+                                />
+                            <h5 class="fw-bolder card-title mb-3">Ashley García</h5>
+                            <p class="card-text text-muted">
+                                Desarrolladora frontend con 5 años de experiencia en tecnologías como Javascript, React, Angular, Bootstrap entre otras.
+                            </p>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-dark mx-1"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <img
+                                th:src="@{/css/images/cara7.jpg}"
+                                class="rounded-circle mb-3"
+                                alt=""
+                                />
+                            <h5 class="fw-bolder card-title mb-3">José Ignacio</h5>
+                            <p class="card-text text-muted">
+                                Desarrollador backend con 6 años de experiencia trabajando con Java, React, Spring, MongoDB, API Rest y demás tecnologías.
+                            </p>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <img
+                                th:src="@{/css/images/cara6.jpg}"
+                                class="rounded-circle mb-3"
+                                alt=""
+                                />
+                            <h5 class="fw-bolder card-title mb-3">Daniela Salguero</h5>
+                            <p class="card-text text-muted">
+                                Profesional con 7 años de experiencia en el ambito de UX y UI usando herramientas como Adobe XD, Sigma entre otras.
+                            </p>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <img
+                                th:src="@{/css/images/cara8.jpg}"
+                                class="rounded-circle mb-3"
+                                alt=""
+                                />
+                            <h5 class="fw-bolder card-title mb-3">Mario Araya</h5>
+                            <p class="card-text text-muted">
+                                Desarrollador fullstack con 9 años de experiencia trabajando con Java, Spring, MySQL, Typescript, React, MondoDB, JUnit entre otras cosas.
+                            </p>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><br><br>
+
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

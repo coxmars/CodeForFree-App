@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <!-- Sección del blog -->
+        <section class="py-5">
+            <div class="container px-2">
+                <div class="row gx-5">
+                    <div class="col-lg-3">
+                        <div class="d-flex align-items-center mt-lg-5 mb-4">
+                            <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                            <div class="ms-3">
+                                <div class="fw-bold">Mario Araya</div>
+                                <div class="text-muted">News</div>
+                            </div>
+                        </div>
+                        <aside>
+                            <section class="py-5">
+                                <div>
+                                    <div class="row gx-5">
+                                        <div class="col-xl-10">
+                                            <h2 class="fw-bolder fs-5 mb-4">Destacado</h2>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">May 12, 2021</div>
+                                                <a style="text-align: justify;" class="text-decoration-none text-dark" th:href="@{/blog1}"><h6>¿Que es la blockchain?</h6></a>
+                                            </div>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">May 5, 2021</div>
+                                                <a class="text-decoration-none text-dark" th:href="@{/blog2}"><h6>¿Que es la web3?</h6></a>
+                                            </div>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">Apr 21, 2021</div>
+                                                <a class="text-decoration-none text-dark" th:href="@{/blog5}"><h6>¿Como usar MySQL?</h6></a>
+                                            </div>
+                                            <div class="mb-5">
+                                                <a class="text-decoration-none" th:href="@{/blog}">
+                                                    Más noticias
+                                                    <i class="bi bi-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>
+                    </div>
+                    <div class="col-lg-7">
+                        <!-- Post content-->
+                        <article>
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h2 class="fw-bolder mb-1">Caracteristicas de Java</h2>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Enero 25, 2022</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Algoritmos</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Software</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" th:src="@{/css/images/java2.svg}" width="700" height="500" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p style="text-align: justify;" class="fs-5 mb-4">El lenguaje de programación Java permite diseñar softwares que podrán ser ejecutados y distribuidos en las diferentes plataformas (MAC, Linux, Windows, etc.), sin la necesidad de modificarlos e incluso sin pensar en la arquitectura de la máquina. Gracias al Java Virtual Machine, una máquina virtual que crea un puente entre la aplicación y el hardware del dispositivo.</p>
+                                <h2 class="fw-bolder mb-4 mt-5">¿Cuáles son las características de Java?</h2>
+                                <ul>
+                                    <li><p style="text-align: justify;" class="fs-5 mb-4"><strong>Orientado a objetos:</strong> El enfoque orientado a objetos (OO) es uno de los estilos de programación más populares. Permite diseñar el software de forma que los distintos tipos de datos que se usen estén unidos a sus operaciones.</p></li>
+                                </ul>
+                                <ul>
+                                    <li><p style="text-align: justify;" class="fs-5 mb-4"><strong>Independiente a la plataforma:</strong> Esto significa que programas escritos en el lenguaje Java pueden ejecutarse en cualquier tipo de hardware, lo que lo hace portable.</p></li>
+                                </ul>
+                            </section>
+                        </article> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

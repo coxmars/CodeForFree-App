@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <!-- Sección del blog -->
+        <section class="py-5">
+            <div class="container px-2">
+                <div class="row gx-5">
+                    <div class="col-lg-3">
+                        <div class="d-flex align-items-center mt-lg-5 mb-4">
+                            <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                            <div class="ms-3">
+                                <div class="fw-bold">Marco Araya</div>
+                                <div class="text-muted">News</div>
+                            </div>
+                        </div>
+                        <aside>
+                            <section class="py-5">
+                                <div>
+                                    <div class="row gx-5">
+                                        <div class="col-xl-10">
+                                            <h2 class="fw-bolder fs-5 mb-4">Destacado</h2>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">May 12, 2021</div>
+                                                <a style="text-align: justify;" class="text-decoration-none text-dark" th:href="@{/blog2}"><h6>¿Que es la web3?</h6></a>
+                                            </div>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">May 5, 2021</div>
+                                                <a class="text-decoration-none text-dark" href="#!"><h6>¿Como ser hacker ético?</h6></a>
+                                            </div>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">Apr 21, 2021</div>
+                                                <a class="text-decoration-none text-dark" href="#!"><h6>¿Como concatenar un String en Java?</h6></a>
+                                            </div>
+                                            <div class="mb-5">
+                                                <a class="text-decoration-none" th:href="@{/blog}">
+                                                    Más noticias
+                                                    <i class="bi bi-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>
+                    </div>
+                    <div class="col-lg-7">
+                        <!-- Post content-->
+                        <article>
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h2 class="fw-bolder mb-1">¿Que es una blockchain?</h2>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Abril 1, 2022</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Algoritmos</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Software</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" th:src="@{/css/images/blockchain.svg}" width="700" height="500" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p style="text-align: justify;" class="fs-5 mb-4">Blockchain, o cadena de bloques, es un libro de contabilidad digital distribuido que almacena datos de cualquier tipo. Una cadena de bloques puede registrar información sobre transacciones de criptomonedas, propiedad de NFT o contratos inteligentes DeFi. 
+                                    Si bien cualquier base de datos convencional puede almacenar este tipo de información, blockchain es única, al estar totalmente descentralizada y no depender de ningún organismo.<br><br> En vez de estar guardados en una ubicación, por un administrador centralizado (como ocurre con una hoja de Excel o una base de datos bancaria), muchas copias idénticas de una base de datos blockchain se 
+                                    guardan en varios equipos denominados nodos que se encuentran distribuidos en una red.</p>
+                                <h2 class="fw-bolder mb-4 mt-5">¿Para qué sirve la blockchain?</h2>
+                                <ul>
+                                    <li><p style="text-align: justify;" class="fs-5 mb-4"><strong>Criptomonedas:</strong> El uso más común de blockchain hoy en día es almacenando y registrando datos relativos a transacciones de criptomonedas. Cuantas más personas usen las criptomonedas, más se generalizará la cadena de bloques.</p></li>
+                                </ul>
+                                <ul>
+                                    <li><p style="text-align: justify;" class="fs-5 mb-4"><strong>Votación:</strong> Los expertos están buscando formas de aplicar blockchain para prevenir el fraude en la votación. En teoría, la votación en blockchain permitiría a las personas enviar votos que no podrían ser manipulados y eliminaría la necesidad de que las personas verifiquen la identidad o hagan el recuento de los votos.</p></li>
+                                </ul>
+                            </section>
+                        </article> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

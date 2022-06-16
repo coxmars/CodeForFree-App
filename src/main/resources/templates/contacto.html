@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+        <main>
+            <section><br><br>
+                <div class="conteiner">
+                    <h2>Contáctenos</h2>
+                    <p class="text-muted">Si desea recibir capacitaciones, recursos o actualizaciones a su propio gusto le ofrecemos varios mecanismos privados,
+                        por ejemplo, a través de este formulario o por el correo adjuntado en la parte inferior le podemos brindar la información.</p>
+                </div>
+            </section>
+            <section><br><br>
+                <div class="features">
+                    <form method="POST" th:action="@{/contacto}" class="form">
+                        <input class="input" type="text" name="name" placeholder="Nombre"> <input
+                            class="input" type="email" name="mail" placeholder="Email">
+                        <textarea class="input" cols="30" rows="10" name="body" placeholder="Mensaje"></textarea>
+                        <input id="boton" class="btn btn-secondary contacto-boton" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </section>
+            <section class="contenido">
+                <article>
+                    <header>
+                        <h3>Localización Oficinas CodeForFree</h3>
+                    </header>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31441.45066632088!2d-84.145516!3d9.918851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fc89ffb80fe9%3A0x24fbc782c723412d!2zU2FuIEpvc8OpLCBFc2NhesO6!5e0!3m2!1ses!2scr!4v1647913694356!5m2!1ses!2scr" width="700" height="400" style="border:0;"></iframe>
+                    <br>
+                </article>
+            </section>
+            <!-- Contact cards-->
+            <section>
+                <div class="features"><br><br>
+                    <div class="service">
+                        <div class="features">
+                            <img class="mb-3" th:src="@{/css/images/chat.png}" width="50" height="50" alt="A tu medida">
+                            <h5>Chatea con nosotros</h5>
+                            <p class="text-muted">Chatea en vivo con uno de nuestros especialistas de soporte.</p>
+                        </div>
+                        <div class="features">
+                            <img class="mb-3" th:src="@{/css/images/community.png}" width="50" height="50" alt="Paso a paso">
+                            <h5>Comunidad</h5>
+                            <p class="text-muted">Explore los foros de la comunidad y hable con otros usuarios.</p>
+                        </div>
+                        <div class="features">
+                            <img class="mb-3" th:src="@{/css/images/help.png}" width="50" height="50" alt="A tu medida">
+                            <h5>Centro de soporte</h5>
+                            <p class="text-muted">Explore las preguntas frecuentes y los artículos de soporte.</p>
+                        </div>
+                        <div class="features">
+                            <img class="mb-3" th:src="@{/css/images/phone.png}" width="50" height="50" alt="Paso a paso">
+                            <h5>Llámanos</h5>
+                            <p class="text-muted">Llámenos durante el horario comercial normal al (506) 8454-2809.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

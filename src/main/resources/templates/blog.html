@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <!-- Sección del blog -->
+        <section>
+            <div><br><br>
+                <div class="conteiner">
+                    <h2 class="fw-bolder text-center">De nuestro blog</h2>
+                    <p class="text-muted">En esta sección de nuestro blog podrá estar a la vanguardia de todos los acontecimientos tecnológicos más importantes que suceden alrededor del mundo. Se pretenden difundir noticias/tutoriales de valor para todos aquellos usuarios que estén interesados en estos.</p><br>
+                </div>
+                <div class="container px-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/blockchain.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog1}"><h5 class="card-title mb-3">¿Que es blockchain?</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">Blockchain es un libro mayor compartido e inmutable que facilita el proceso de registro de transacciones y de seguimiento de activos en una red. Un activo puede ser tangible (una casa, un auto, dinero en efectivo, terrenos) o intangible (propiedad intelectual, patentes, derechos de autor, marcas).</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Marco Araya Jiménez</div>
+                                                <div class="text-muted">Abril 04, 2022 &middot; 6 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/web3.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog2}"><h5 class="card-title mb-3">¿Que es la web3?</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">La web 3.0 busca crear un nuevo sistema de clasificación de páginas web estrechamente ligado a las necesidades y características de los usuarios. De esta forma, al conectarse a Internet, los usuarios pueden disfrutar de una plataforma mucho más personalizada.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Caleb Loría Goméz</div>
+                                                <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/cyber.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog3}"><h5 class="card-title mb-3">¿Como ser hacker ético?</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">El hacker ético, es el profesional que trabaja en el departamento de seguridad informática de las empresas. Su papel consiste en vigilar que todos los datos, así como la web corporativa estén exentas de cualquier ataque.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Mario Araya Royo</div>
+                                                <div class="text-muted">Enero 20, 2022 &middot; 5 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <div><br><br>
+                <div class="container px-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/java2.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog4}"><h5 class="card-title mb-3">Caracteristicas de Java</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">Java es un tipo de lenguaje de programación y una plataforma informática, creada y comercializada por Sun Microsystems en el año 1995. Se constituye como un lenguaje orientado a objetos, su intención es permitir que los desarrolladores de aplicaciones escriban el programa una sola vez y lo ejecuten en cualquier dispositivo.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Mario Araya</div>
+                                                <div class="text-muted">Abril 04, 2022 &middot; 6 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/mysql2.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog5}"><h5 class="card-title mb-3">¿Como usar MySQL?</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">MySQL es una de las bases de datos más populares del mercado dada su gratuidad y sus capacidades. Muchas aplicaciones usan MySQL como base de datos.
+
+Para ayudar en el diseño de bases de datos sobre MySQL, disponemos de Workbench. En el post de hoy explicaremos que es Workbench y aprenderemos de forma somera cómo usarlo para crear una base de datos.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Marco Araya Jiménez</div>
+                                                <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/spring2.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog6}"><h5 class="card-title mb-3">¿Para que nos sirve Spring?</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">Spring, ofrece como elemento clave el soporte de infraestructura a nivel de aplicación, brindando un completo modelo tanto para la configuración como para la programación de aplicaciones empresariales desarrolladas bajo Java, sin discriminación en cuanto al despliegue de la plataforma. Una ventaja es que los equipos de desarrollo puedan enfocarse directamente en la lógica empresarial</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Caleb Loría</div>
+                                                <div class="text-muted">Enero 20, 2022 &middot; 5 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

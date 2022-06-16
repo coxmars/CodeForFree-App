@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <!-- Banner principal -->
+        <section class="bg-dark text-light text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h2>Hazte un desarrollador web</h2>
+                        <p style="text-align: justify;" class="lead my-4">
+                            Nos enfocamos en enseñar a nuestros estudiantes los fundamentos de las últimas y mejores
+                            tecnologías para prepararlos para su primer rol de desarrollador. Asimismo, brindamos
+                            tutoriales/noticias importantes de tecnología a través de nuestro blog.
+                        </p>
+                        <div>
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" th:href="@{/cursos}">Comenzar</a>
+                            <a class="btn btn-outline-light btn-lg px-4" th:href="@{/nosotros}">Leer más</a>
+                        </div>
+                    </div>
+                    <img class="img-fluid w-50 d-none d-sm-block" th:src="@{/css/images/showcase.svg}" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Caracteristicas -->
+        <section>
+            <div class="features"><br><br>
+                <h3 class="fw-bolder our-features">Una mejor manera de empezar a construir</h3><br>
+                <div class="service">
+                    <div class="features">
+                        <img th:src="@{/css/images/book.svg}" width="50" height="50" alt="A tu medida">
+                        <h3>A tu medida</h3>
+                        <p>Independientemente de su nivel de experiencia, estará escribiendo código real y funcional a los pocos
+                            minutos de comenzar su primer curso.</p>
+                    </div>
+                    <div class="features">
+                        <img th:src="@{/css/images/stopwatch.svg}" width="50" height="50" alt="Paso a paso">
+                        <h3>Paso a paso</h3>
+                        <p>Vaya paso a paso a través de nuestros recursos únicos. Evalúe lo que ha aprendido con cuestionarios y
+                            avance en sus habilidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="features">
+                <div class="service">
+                    <div class="features">
+                        <img th:src="@{/css/images/award.svg}" width="50" height="50" alt="Obtenga respaldo">
+                        <h3>Obtenga respaldo</h3>
+                        <p>Obtenga un certificado para validar sus habilidades recién adquiridas. Publíquelo en las redes sociales para incrementar sus oportunidades laborales.</p>
+                    </div>
+                    <div class="features">
+                        <img th:src="@{/css/images/check.svg}" width="50" height="50" alt="Recursos gratuitos">
+                        <h3>Recursos gratuitos</h3>
+                        <p>Ofrecemos todos nuestros recursos a su disposición de forma gratuita. Creemos en el conocimiento compartido sin fronteras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reseña sobre la app -->
+        <section id="learn" class="p-5 bg-dark text-light">
+            <div class="features text-light">
+                <img th:src="@{/css/images/quote.svg}" width="60" height="60" alt=><br><br>
+                <blockquote style = "line-height: 30px;" class="h5 text-center green antialiased">
+                    Originalmente nuestro departamento de desarrolladores junior debía pagar plataformas especializadas en la enseñanza de desarrollo web, las cuales no brindaban tantas capacitaciones o actualizaciones de valor. Me enorgullece decir que, a principios de 2019, trasladamos el aprendizaje de nuestro departamento de desarrolladores junior casi por completo a CodeForFree.”
+                </blockquote><br><br>
+                <div>
+                    <span class="h5 text-center green antialiased">Taylor Wicksell, Senior Software Engineer, Netflix</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del blog -->
+        <section>
+            <div><br><br>
+                <h3 class="fw-bolder text-center">De nuestro blog</h3><br>
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/blockchain.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog1}"><h5 class="card-title mb-3">¿Que es blockchain?</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">Blockchain es un libro mayor compartido e inmutable que facilita el proceso de registro de transacciones y de seguimiento de activos en una red. Un activo puede ser tangible (una casa, un auto, dinero en efectivo, terrenos) o intangible (propiedad intelectual, patentes, derechos de autor, marcas).</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Marco Araya Jiménez</div>
+                                                <div class="text-muted">Abril 04, 2022 &middot; 6 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/web3.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog2}"><h5 class="card-title mb-3">¿Que es la web3?</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">La web 3.0 busca crear un nuevo sistema de clasificación de páginas web estrechamente ligado a las necesidades y características de los usuarios. De esta forma, al conectarse a Internet, los usuarios pueden disfrutar de una plataforma mucho más personalizada.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Caleb Loría Goméz</div>
+                                                <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" th:src="@{/css/images/cyber.svg}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <a class="text-decoration-none link-dark stretched-link" th:href="@{/blog3}"><h5 class="card-title mb-3">¿Como ser hacker ético?</h5></a>
+                                    <p style="text-align: justify;" class="card-text mb-0">El hacker ético, es el profesional que trabaja en el departamento de seguridad informática de las empresas. Su papel consiste en vigilar que todos los datos, así como la web corporativa estén exentas de cualquier ataque.</p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Mario Araya Royo</div>
+                                                <div class="text-muted">Enero 20, 2022 &middot; 5 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

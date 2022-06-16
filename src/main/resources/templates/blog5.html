@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/layout :: head"></head>
+    <body>
+        <header th:replace="layout/layout :: header"></header>
+
+        <!-- Sección del blog -->
+        <section class="py-5">
+            <div class="container px-2">
+                <div class="row gx-5">
+                    <div class="col-lg-3">
+                        <div class="d-flex align-items-center mt-lg-5 mb-4">
+                            <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                            <div class="ms-3">
+                                <div class="fw-bold">Marco Araya</div>
+                                <div class="text-muted">News</div>
+                            </div>
+                        </div>
+                        <aside>
+                            <section class="py-5">
+                                <div>
+                                    <div class="row gx-5">
+                                        <div class="col-xl-10">
+                                            <h2 class="fw-bolder fs-5 mb-4">Destacado</h2>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">May 12, 2021</div>
+                                                <a style="text-align: justify;" class="text-decoration-none text-dark" th:href="@{/blog1}"><h6>¿Que es la blockchain?</h6></a>
+                                            </div>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">May 5, 2021</div>
+                                                <a class="text-decoration-none text-dark" th:href="@{/blog2}"><h6>¿Que es la web3?</h6></a>
+                                            </div>
+                                            <!-- News item-->
+                                            <div class="mb-5">
+                                                <div class="small text-muted">Apr 21, 2021</div>
+                                                <a class="text-decoration-none text-dark" th:href="@{/blog6}"><h6>¿Para que sirve Spring?</h6></a>
+                                            </div>
+                                            <div class="mb-5">
+                                                <a class="text-decoration-none" th:href="@{/blog}">
+                                                    Más noticias
+                                                    <i class="bi bi-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>
+                    </div>
+                    <div class="col-lg-7">
+                        <!-- Post content-->
+                        <article>
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h2 class="fw-bolder mb-1">¿Como usar MySQL?</h2>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Marzo 2, 2022</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Algoritmos</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Software</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" th:src="@{/css/images/mysql2.svg}" width="700" height="500" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p style="text-align: justify;" class="fs-5 mb-4">Una vez nos hemos descargado MySQL Workbench, procedemos a su instalación que es muy sencilla y guiada en todo momento.
+Partimos de la base que ya hemos creado una conexión local para hacer que nuestro equipo funcione como servidor de la base de datos. Esto se hace añadiendo una nueva conexión como localhost al inicio de Workbench.
+<br><br>Ahora ya estamos en disposición de empezar a crear nuestro modelo de base de datos. El primer paso es ir al menú superior de la aplicación y entrar en File y seleccionar New Model.
+Se nos abrirá una ventana en la que deberemos empezar a definir nuestra base de datos, haciendo doble click previamente en la opción mydb.
+<br><br>Hecho esto procederemos a dar nombre a nuestra nueva base de datos en la caja correspondiente de la pestaña en que aparece Name: También deberemos definir en el campo Collation: el conjunto de caracteres que usaremos y que soportará la base de datos en función del idioma que usemos.</p>
+                            </section>
+                        </article> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer th:replace="layout/layout :: footer"></footer>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <title th:fragment="titulo">CodeForFree</title>
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.final.css}"/>
+    </head>
+    <body>
+        <section>
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div>
+                        <div class="d-md-flex">
+                            <div class="col-md-7 p-4 p-lg-5 text-center d-flex align-items-center order-md-last">
+                                <img th:src="@{/css/images/fundamentals.svg}" width="500" height="500"/>
+                            </div>
+                            <div class="col-md-3 mx-auto mt-5 text-left align-items-left"><br><br>
+                                <div class="d-flex">
+                                    <div class="w-100">
+                                        <h3 class="mb-4" th:text="#{text.register.titulo}"></h3>
+                                    </div>
+                                </div>
+                                <div>
+                                    <form th:action="@{/auth/registro}" th:object="${usuario}" method="post">
+                                        <div class="form-group mb-4">
+                                            <input type="text" class="form-control rounded-pill" th:if="#{text.register.nombre}=='Nombre'" placeholder="Nombre" th:field="*{nombre}" required>
+                                            <input type="text" class="form-control rounded-pill" th:if="#{text.register.nombre}!='Nombre'" placeholder="Name" th:field="*{nombre}" required>
+                                            <small th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></small>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <input type="text" class="form-control rounded-pill" th:if="#{text.register.apellido}=='Apellido'" placeholder="Apellido" th:field="*{apellido}" required>
+                                            <input type="text" class="form-control rounded-pill" th:if="#{text.register.apellido}!='Apellido'" placeholder="Last Name" th:field="*{apellido}" required>
+                                            <small th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}"></small>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <input type="text" class="form-control rounded-pill" th:if="#{text.register.email}=='Correo'" placeholder="Correo" th:field="*{email}" required>
+                                            <input type="text" class="form-control rounded-pill" th:if="#{text.register.email}!='Correo'" placeholder="Mail" th:field="*{email}" required>
+                                            <small th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <input type="text" class="form-control rounded-pill" th:if="#{text.register.usuario}=='Usuario'" placeholder="Usuario" th:field="*{username}" required>
+                                            <input type="text" class="form-control rounded-pill" th:if="#{text.register.usuario}!='Usuario'" placeholder="Username" th:field="*{username}" required>
+                                            <small th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></small>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <input type="password" class="form-control rounded-pill" th:if="#{text.register.password}=='Contraseña'" placeholder="Contraseña" th:field="*{passwd}" required>
+                                            <input type="password" class="form-control rounded-pill" th:if="#{text.register.password}!='Contraseña'" placeholder="Password" th:field="*{passwd}" required>
+                                            <small th:if="${#fields.hasErrors('passwd')}" th:errors="*{passwd}"></small>
+                                        </div>
+                                        <div class="form-group mb-4 mt-4">
+                                            <button type="submit" class="form-control btn btn-primary submit px-3 rounded-pill" th:text="#{text.register.enviar}"></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </body>
+</html>
