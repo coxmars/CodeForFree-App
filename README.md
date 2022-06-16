@@ -57,7 +57,7 @@ The development environment is shaped by:
 - Java - version 17 LTS (Long Term Support)
 - Bootstrap - version 5.0
 - JQuery - version 3.2.1
-- Other files for Bootstrap/JQuery They can be downloaded from here: 
+- Other files for Bootstrap/JQuery they can be downloaded from here: 
 - [Dependencies](https://getbootstrap.com/docs/5.0/getting-started/download/)
 
 
