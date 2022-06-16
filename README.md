@@ -21,9 +21,15 @@
 
 
 ## Technologies Used
-- Netbeans IDE - version 13
-- Java - version 17 LTS (Long Term Support)
-- Tech 3 - version 3.0
+- Netbeans IDE - version 13.
+- Java - version 17 LTS (Long Term Support).
+- Bootstrap - version 5.0.
+- Spring Framework - version 5.
+- MySQL - version 8.0.26.
+- HTML5.
+- CSS3.
+- Email Connection.
+- Internationalization and few others.
 
 
 
@@ -54,14 +60,10 @@ The development environment is shaped by:
 - Other files for Bootstrap/JQuery They can be downloaded from here: 
 - [Dependencies](https://getbootstrap.com/docs/5.0/getting-started/download/)
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+It's simple is just a WebApp with its functionalities
 
 
 ## Project Status
@@ -69,22 +71,18 @@ Project is: In Progress, the app is almost finished but the main functionality o
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- The code for the blog handlers could be a lot better, it's inefficient due to the few minutes it took to add it, with time it can be a lot better.
+- In the login and registration alerts should appear to correctly guide the user.
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Implement the main functionality of learning programming languages.
+- Improve the blog section.
 
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- Many thanks to [CalebLoría](https://github.com/Caleb-LGZ) for the help during the project.
 
 
 ## Contact
